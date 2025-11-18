@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jacques Dimitri — Portfolio</title>
+  <meta name="description" content="Portfolio de Jacques Dimitri (JED) — Réseaux, Sécurité & Télécommunications" />
+  <style>
+    :root{--bg:#0f1724;--card:#111827;--muted:#9ca3af;--accent:#06b6d4;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,#071024 0%, #071826 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:1000px;margin:32px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:112px;height:112px;border-radius:20px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;color:var(--accent)}
+    h1{margin:0;font-size:26px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    a.btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:inherit;text-decoration:none;font-size:14px}
+
+    main{margin-top:28px}
+    section.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:12px;margin-bottom:18px;border:1px solid rgba(255,255,255,0.03)}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .skills ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+    .projects .project{border-radius:10px;padding:12px;background:rgba(255,255,255,0.02);margin-bottom:10px}
+    .small{color:var(--muted);font-size:13px}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:720px){.grid{grid-template-columns:1fr}.avatar{width:88px;height:88px;border-radius:14px}.container{padding:12px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" id="avatar">
+        <img src="jacques-dimitri.jpg" style="width:100%;height:100%;border-radius:20px;object-fit:cover;" />
+      </div>
+
+      <div>
+        <h1 id="title">Jacques Dimitri — Réseaux & Sécurité</h1>
+        <p class="lead">Étudiant Bachelor 3 Réseaux & Sécurité • Passionné par la cybersécurité, les réseaux et les télécommunications</p>
+        <nav>
+          <a class="btn" href="#about">À propos</a>
+          <a class="btn" href="#skills">Compétences</a>
+          <a class="btn" href="#projects">Projets</a>
+          <a class="btn" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ABOUT -->
+      <section id="about" class="card">
+        <h2>À propos</h2>
+        <p class="small">
+          Je suis <strong>Jacques Dimitri EKEDI EDIMO</strong>, étudiant en <strong>Bachelor 3 Réseaux & Sécurité</strong> à Keyce Informatique et Intelligence Artificielle. Titulaire d'un BTS en Télécommunication, j'ai effectué deux stages (1 à 3 mois) à la cellule informatique de l'hôpital Laquintinie de Douala entre 2024 et 2025 où j'ai contribué à l'installation et à la sécurisation d'un serveur de fichiers pour la gestion des dossiers médicaux.
+        </p>
+        <p class="small">Mon objectif : devenir ingénieur réseau & sécurité ou SOC Analyst. Je m'intéresse aux architectures sécurisées, à l'analyse de trafic et à la transmission en fibre optique.</p>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="card skills">
+        <h2>Compétences</h2>
+        <div class="grid">
+          <div>
+            <h3>Techniques</h3>
+            <ul>
+              <li>Installation de serveur IPBX, caméra de surveillance</li>
+              <li>Réseaux : TCP/IP, VLAN, VPN, routage</li>
+              <li>Virtualisation (VMware, VirtualBox)</li>
+              <li>Télécommunications : soudure et installation de laiaison par fibre optique, modulation</li>
+              <li>installation d’antenne Vsat et Starlink</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Soft skills</h3>
+            <ul>
+              <li>Analyse & résolution de problèmes</li>
+              <li>Travail en équipe</li>
+              <li>Rigueur & curiosité</li>
+              <li>Communication</li>
+              <li>Adaptabilité</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="card projects">
+        <h2>Projets</h2>
+
+        <div class="project">
+          <h3>Déploiement d’une liaison P2P avec antennes Ubiquiti</h3>
+          <p class="small">Réalisation d’une connexion point-à-point entre deux sites distants afin de partager des ressources en toute stabilité dans un cadre de formation en télécommunication.</p>
+          <p class="small"><strong>Technos :</strong> Ubiquiti, Radio Link, Configuration réseau, étude de terrain </p>
+        </div>
+
+        <div class="project">
+          <h3>Installation d’un serveur de téléphonie IPBX TRIXBOX</h3>
+          <p class="small">Mise en place et configuration d’un serveur de téléphonie IPBX sous machine virtuelle, avec gestion des extensions et interconnexions internes.</p>
+          <p class="small"><strong>Technos :</strong> TRIXBOX, VoIP, Virtualisation, Réseaux</p>
+        </div>
+
+        <div class="project">
+          <h3>Installation d’un serveur de fichiers – Hôpital Laquintinie de Douala</h3>
+          <p class="small">Projet réalisé au sein de la cellule informatique, visant à résoudre les problèmes de gestion et de sécurisation des données sensibles en mettant en place un serveur de fichiers fiable.</p>
+          <p class="small"><strong>Technos :</strong> Windows Server, Active Directory, méthode de répartiton des droits AGDLP</p>
+        </div>
+
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="card">
+        <h2>Parcours & Formation</h2>
+        <p class="small"><strong>Bachelor 3 — Réseaux & Sécurité</strong>, Keyce Informatique et Intelligence Artificielle</p>
+        <p class="small"><strong>BTS — Télécommunication</strong></p>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+         <p class="small">Email : <a href="mailto:eejdimitri@gmail.com" id="email">eejdimitri@gmail.com</a></p>
+        <p class="small">GitHub : <a href="https://github.com/JED-53" target="_blank" id="github">github.com/JED-53</a></p>
+         <p class="small">LinkedIn : <a href="https://www.linkedin.com/in/jacques-dimitri-ekedi-edimo-3b147738b/" target="_blank" id="linkedin">linkedin.com/in/jacques-dimitri-ekedi-edimo</a></p>
+        <p class="small">Télécharger le CV : <a href="CV EKEDI EDIMO Jacques Dimitri.pdf" id="cvlink" class="small" target="_blank">CV (PDF)</a></p>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="small">© <span id="year"></span> Jacques EDIMO Dimitri — Portfolio • </div>
+    </footer>
+  </div>
+
+  <script>
+    // Small interactive niceties
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth scroll for nav
+    document.querySelectorAll('a.btn').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const id = a.getAttribute('href').slice(1);
+        document.getElementById(id).scrollIntoView({behavior:'smooth'});
+      });
+    });
+
+
+  </script>
+</body>
+</html>
